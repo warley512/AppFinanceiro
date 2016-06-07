@@ -5,6 +5,10 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using System.IO;
+using SQLite;
+using System.Collections.Generic;
+using AppFinanceiro.BD;
 
 namespace AppFinanceiro
 {
@@ -20,9 +24,26 @@ namespace AppFinanceiro
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            // Get our button from the layout resource,
-            // and attach an event to it
-           
+            //Instancia banco de dados
+            var db = new SQLiteConnection(Path.Combine(
+                System.Environment.GetFolderPath(
+                    System.Environment.SpecialFolder.MyDocuments), "DB_Financeiro"
+                )
+            );
+
+            db.CreateTable<BD_Atributo>(); // Cria as colunas de acordo com o definido na classe Cliente
+            db.CreateTable<BD_Categoria>();
+            db.CreateTable<BD_Conta>();
+            db.CreateTable<BD_Lancamento>();
+            db.CreateTable<BD_Lancamento_Categoria>();
+            db.CreateTable<BD_Usuario>();
+
+            db.Insert(new BD_Usuario() { nome = "Cliente1" , email = "jo@as.com", senha="123abc"});
+
+            List<BD_Usuario> CLIS = db.Table<BD_Usuario>().ToList(); //Cria uma Lista com o que está na tabela Cliente transformado em lista.
+
+            db.Close();
+
 
         }
     }
