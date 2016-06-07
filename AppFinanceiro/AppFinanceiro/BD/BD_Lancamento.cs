@@ -14,7 +14,7 @@ using SQLite;
 using System.IO;
 
 namespace AppFinanceiro.BD {
-    class BD_Lancamentos {
+    class BD_Lancamento {
         [PrimaryKey, AutoIncrement]
         int id { get; set; }
 
