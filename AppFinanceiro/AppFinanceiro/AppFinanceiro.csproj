@@ -69,6 +69,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
+    <AndroidResource Include="Resources\layout\AdicionarConta.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
     <None Include="Resources\layout\Home.axml">
       <SubType>AndroidResource</SubType>
     </None>
