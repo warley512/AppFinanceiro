@@ -14,11 +14,10 @@ using SQLite;
 using System.IO;
 
 namespace AppFinanceiro.BD {
-    class BD_Usuario {
+    class BD_Categoria {
         [PrimaryKey, AutoIncrement]
         int id { get; set; }
         string nome { get; set; }
-        string email { get; set; }
-        string senha { get; set; }
+        int id_mae { get; set; }
     }
 }

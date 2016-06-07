@@ -57,6 +57,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BD\BD_Categoria.cs" />
+    <Compile Include="BD\BD_Conta.cs" />
     <Compile Include="BD\BD_Lancamentos.cs" />
     <Compile Include="BD\BD_Usuario.cs" />
     <Compile Include="MainActivity.cs" />
