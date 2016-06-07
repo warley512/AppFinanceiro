@@ -63,6 +63,7 @@
     <Compile Include="BD\BD_Conta.cs" />
     <Compile Include="BD\BD_Atributo.cs" />
     <Compile Include="BD\BD_Categoria.cs" />
+    <Compile Include="GerenciaMenu.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
