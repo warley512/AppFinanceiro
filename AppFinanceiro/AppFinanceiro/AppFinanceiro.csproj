@@ -72,9 +72,9 @@
     <AndroidResource Include="Resources\layout\AdicionarConta.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
-    <None Include="Resources\layout\Home.axml">
+    <AndroidResource Include="Resources\layout\AdicionarGastos.axml">
       <SubType>AndroidResource</SubType>
-    </None>
+    </AndroidResource>
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
