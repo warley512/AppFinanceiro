@@ -13,7 +13,7 @@ using Android.Widget;
 using SQLite;
 using System.IO;
 
-namespace AppFinanceiro {
+namespace AppFinanceiro.BD {
     class BD_Lancamentos {
         [PrimaryKey, AutoIncrement]
         int id { get; set; }
