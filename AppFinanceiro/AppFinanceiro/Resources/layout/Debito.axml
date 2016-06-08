@@ -12,5 +12,5 @@
         android:layout_height="wrap_content"
         android:id="@+id/textViewInserirDebito"
         android:textColor="#FF0000"
-        android:textSize="50" />
+        android:textSize="50px" />
 </LinearLayout>
