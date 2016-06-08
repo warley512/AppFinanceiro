@@ -65,8 +65,8 @@
     <Compile Include="BD\BD_Categoria.cs" />
     <Compile Include="Debito.cs" />
     <Compile Include="GerenciaMenu.cs" />
+    <Compile Include="InserirCredito.cs" />
     <Compile Include="MainActivity.cs" />
-    <Compile Include="Resources\InserirCredito.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -80,6 +80,9 @@
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\layout\Celula.axml" />
     <AndroidResource Include="Resources\layout\Debito.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Credito.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>
