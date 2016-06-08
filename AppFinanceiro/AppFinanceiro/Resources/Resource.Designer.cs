@@ -63,11 +63,14 @@ namespace AppFinanceiro
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f050004
+			public const int editText1 = 2131034116;
+			
 			// aapt resource value: 0x7f050000
 			public const int imagemItem = 2131034112;
 			
-			// aapt resource value: 0x7f050004
-			public const int listaDados = 2131034116;
+			// aapt resource value: 0x7f050005
+			public const int listaDados = 2131034117;
 			
 			// aapt resource value: 0x7f050001
 			public const int textLabel = 2131034113;

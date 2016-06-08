@@ -17,7 +17,6 @@ namespace AppFinanceiro
     public class MainActivity : Activity
     {
         List<String> Dados;
-        int count = 1;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -60,9 +59,11 @@ namespace AppFinanceiro
             list.Adapter = gl;
             list.ItemClick += List_ItemClick;
         }
+
         void List_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
-            Toast.MakeText(this, Dados[e.Position], ToastLength.Short).Show();
+            StartActivity(typeof(Debito));//abre uma tela em cima da tela inicial.
+           //Toast.MakeText(this, Dados[e.Position], ToastLength.Short).Show();
         }
     }
 }
