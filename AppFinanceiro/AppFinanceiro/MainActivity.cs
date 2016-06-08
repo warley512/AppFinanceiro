@@ -15,6 +15,7 @@ namespace AppFinanceiro
     [Activity(Label = "AppFinanceiro", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
+        List<String> Dados;
         int count = 1;
 
         protected override void OnCreate(Bundle bundle)
@@ -40,6 +41,10 @@ namespace AppFinanceiro
 
             db.Insert(new BD_Usuario() { nome = "Cliente1" , email = "jo@as.com", senha="123abc"});
 
+            // Get our button from the layout resource,
+            // and attach an event to it
+            ListView list = FindViewById<ListView>(Resource.Id.listaDados);
+            GerenciaMenu gl = new GerenciaMenu(Dados, this);
             List<BD_Usuario> CLIS = db.Table<BD_Usuario>().ToList(); //Cria uma Lista com o que está na tabela Cliente transformado em lista.
 
             db.Close();

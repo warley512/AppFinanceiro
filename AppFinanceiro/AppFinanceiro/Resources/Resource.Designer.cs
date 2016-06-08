@@ -64,7 +64,13 @@ namespace AppFinanceiro
 		{
 			
 			// aapt resource value: 0x7f050000
-			public const int switch1 = 2131034112;
+			public const int imagemItem = 2131034112;
+			
+			// aapt resource value: 0x7f050002
+			public const int listaDados = 2131034114;
+			
+			// aapt resource value: 0x7f050001
+			public const int textLabel = 2131034113;
 			
 			static Id()
 			{
@@ -83,7 +89,13 @@ namespace AppFinanceiro
 			public const int AdicionarConta = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int Main = 2130903041;
+			public const int Celula = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int Debito = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int Main = 2130903043;
 			
 			static Layout()
 			{

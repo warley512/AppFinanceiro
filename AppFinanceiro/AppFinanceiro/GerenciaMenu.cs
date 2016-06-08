@@ -52,7 +52,7 @@ namespace AppFinanceiro
                 view = C.LayoutInflater.Inflate(Resource.Layout.Celula, null);
             }
 
-            view.FindViewById<ImageView>(Resource.Id.imagemItem).SetImageResource(Resource.Drawable.carro);
+            view.FindViewById<ImageView>(Resource.Id.imagemItem).SetImageResource(Resource.Drawable.logo);
 
             view.FindViewById<TextView>(Resource.Id.textLabel).Text = Dados[position];
 
