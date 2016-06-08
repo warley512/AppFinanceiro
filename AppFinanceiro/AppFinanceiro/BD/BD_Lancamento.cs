@@ -16,16 +16,16 @@ using System.IO;
 namespace AppFinanceiro.BD {
     public class BD_Lancamento {
         [PrimaryKey, AutoIncrement]
-        int id { get; set; }
+        public int id { get; set; }
 
-        string nome { get; set; }
-        int tipo { get; set; }
-        double valor { get; set; }
-        string comentario { get; set; }
-        string data { get; set;}
-        int hora { get; set; }
+        public string nome { get; set; }
+        public int tipo { get; set; }
+        public double valor { get; set; }
+        public string comentario { get; set; }
+        public string data { get; set;}
+        public int hora { get; set; }
 
         //Foreign keys
-        int id_conta { get; set; }
+        public int id_conta { get; set; }
     }
 }

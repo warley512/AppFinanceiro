@@ -15,12 +15,12 @@ using System.IO;
 
 namespace AppFinanceiro.BD
 {
-    class BD_Atributo
+    public class BD_Atributo
     {
         [PrimaryKey, AutoIncrement]
-        int id { get; set; }
+        public int id { get; set; }
 
-        string nome { get; set; }
-        int id_categoria { get; set; }
+        public string nome { get; set; }
+        public int id_categoria { get; set; }
     }
 }
