@@ -13,4 +13,9 @@
         android:id="@+id/textViewInserirDebito"
         android:textColor="#FF0000"
         android:textSize="50px" />
+    <EditText
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/valorDebito" />
 </LinearLayout>

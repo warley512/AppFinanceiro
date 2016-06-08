@@ -9,6 +9,7 @@ using System.IO;
 using SQLite;
 using System.Collections.Generic;
 using AppFinanceiro.BD;
+using System.Linq;
 
 namespace AppFinanceiro
 {
@@ -39,13 +40,13 @@ namespace AppFinanceiro
             db.CreateTable<BD_Lancamento_Categoria>();
             db.CreateTable<BD_Usuario>();
 
-           // db.Insert(new BD_Usuario() { nome = "Cliente1" , email = "jo@as.com", senha="123abc"});
+            db.Insert(new BD_Usuario() { nome = "Cliente1" , email = "jo@as.com", senha="123abc"});
 
             // Get our button from the layout resource,
             // and attach an event to it
             ListView list = FindViewById<ListView>(Resource.Id.listaDados);
             GerenciaMenu gl = new GerenciaMenu(Dados, this);
-           // List<BD_Usuario> CLIS = db.Table<BD_Usuario>().ToList(); //Cria uma Lista com o que está na tabela Cliente transformado em lista.
+            List<BD_Usuario> CLIS = db.Table<BD_Usuario>().ToList(); //Cria uma Lista com o que está na tabela Cliente transformado em lista.
 
             db.Close();
 

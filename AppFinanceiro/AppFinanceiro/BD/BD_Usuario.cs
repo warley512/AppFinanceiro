@@ -13,12 +13,14 @@ using Android.Widget;
 using SQLite;
 using System.IO;
 
-namespace AppFinanceiro.BD {
-    public class BD_Usuario {
+namespace AppFinanceiro.BD
+{
+    public class BD_Usuario
+    {
         [PrimaryKey, AutoIncrement]
         int id { get; set; }
-        string nome { get; set; }
-        string email { get; set; }
-        string senha { get; set; }
+        public string nome { get; set; }
+        public string email { get; set; }
+        public string senha { get; set; }
     }
 }
