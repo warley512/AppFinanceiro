@@ -45,10 +45,10 @@ namespace AppFinanceiro
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int c0f7fe = 2130837504;
+			public const int Icon = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int Icon = 2130837505;
+			public const int logo = 2130837505;
 			
 			static Drawable()
 			{
@@ -60,11 +60,42 @@ namespace AppFinanceiro
 			}
 		}
 		
+		public partial class Id
+		{
+			
+			// aapt resource value: 0x7f050000
+			public const int imagemItem = 2131034112;
+			
+			// aapt resource value: 0x7f050002
+			public const int listaDados = 2131034114;
+			
+			// aapt resource value: 0x7f050001
+			public const int textLabel = 2131034113;
+			
+			static Id()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Id()
+			{
+			}
+		}
+		
 		public partial class Layout
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Main = 2130903040;
+			public const int AdicionarConta = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int Celula = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int Debito = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int Main = 2130903043;
 			
 			static Layout()
 			{

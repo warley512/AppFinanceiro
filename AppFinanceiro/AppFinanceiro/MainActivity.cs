@@ -12,6 +12,7 @@ namespace AppFinanceiro
     [Activity(Label = "AppFinanceiro", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
+        List<String> Dados;
         int count = 1;
 
         protected override void OnCreate(Bundle bundle)
@@ -31,7 +32,7 @@ namespace AppFinanceiro
             // Get our button from the layout resource,
             // and attach an event to it
             ListView list = FindViewById<ListView>(Resource.Id.listaDados);
-            GerenciaLista gl = new GerenciaLista(Dados, this);
+            GerenciaMenu gl = new GerenciaMenu(Dados, this);
 
             list.Adapter = gl;
             list.ItemClick += List_ItemClick;
