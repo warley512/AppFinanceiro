@@ -66,6 +66,7 @@
     <Compile Include="Debito.cs" />
     <Compile Include="GerenciaMenu.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\InserirCredito.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
