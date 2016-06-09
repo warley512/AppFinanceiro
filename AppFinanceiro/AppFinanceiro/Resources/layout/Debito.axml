@@ -4,9 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="25px"
-    android:contentDescription="@string/Hello"
     android:minHeight="25px"
-    android:background="#fff">
+    android:contentDescription="@string/Hello">
     <EditText
         android:inputType="numberDecimal"
         android:layout_width="match_parent"
@@ -21,10 +20,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editText1"
-        android:contextClickable="true"
-        android:cursorVisible="true"
         android:contentDescription="@string/Hello"
+        android:contextClickable="true"
         android:digits="@string/Hello"
+        android:cursorVisible="true"
         android:text="Descrição" />
     <Spinner
         android:id="@+id/spinnerDebitoTipoLanc"
@@ -38,16 +37,19 @@
         android:layout_height="wrap_content"
         android:background="@android:drawable/btn_dropdown"
         android:spinnerMode="dropdown" />
-    <EditText
-        android:inputType="date"
+    <Button
+        android:text="Selecionar Data"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText2"
-        android:text="Data" />
-    <EditText
-        android:inputType="time"
-        android:layout_width="match_parent"
+        android:id="@+id/date_select_button" />
+    <TextView
+        android:id="@+id/timeDisplay"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText3"
-        android:text="Hora" />
+        android:text="" />
+    <Button
+        android:id="@+id/pickTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modificar Hora" />
 </LinearLayout>
