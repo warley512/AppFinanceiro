@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:minWidth="25px"
     android:contentDescription="@string/Hello"
-    android:minHeight="25px">
+    android:minHeight="25px"
+    android:background="#fff">
     <EditText
         android:inputType="numberDecimal"
         android:layout_width="match_parent"
