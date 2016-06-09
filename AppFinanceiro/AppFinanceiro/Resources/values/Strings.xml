@@ -2,4 +2,8 @@
 <resources>
     <string name="Hello">Hello World, Click Me!</string>
     <string name="ApplicationName">AppFinanceiro</string>
+    <string-array name="account_types">
+      <item>Crédito</item>
+      <item>Débito</item>
+    </string-array>
 </resources>

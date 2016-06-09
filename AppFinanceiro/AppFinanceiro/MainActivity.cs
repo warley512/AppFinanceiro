@@ -45,8 +45,7 @@ namespace AppFinanceiro
             Dados = new List<String>();
 
             Dados.Add("Cadastro de Contas");
-            Dados.Add("Débito");
-            Dados.Add("Crédito");
+            Dados.Add("Lançamento");
             Dados.Add("Resumo Financeiro");
             // Get our button from the layout resource,
             // and attach an event to it
