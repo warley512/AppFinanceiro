@@ -18,8 +18,9 @@ namespace AppFinanceiro
 	[System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "1.0.0.0")]
 	public partial class Resource
 	{
-		
-		static Resource()
+        internal static object Array;
+
+        static Resource()
 		{
 			global::Android.Runtime.ResourceIdManager.UpdateIdValues();
 		}
@@ -63,23 +64,26 @@ namespace AppFinanceiro
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050004
-			public const int editText1 = 2131034116;
-			
-			// aapt resource value: 0x7f050000
-			public const int imagemItem = 2131034112;
-			
 			// aapt resource value: 0x7f050005
-			public const int listaDados = 2131034117;
+			public const int editText1 = 2131034117;
 			
 			// aapt resource value: 0x7f050001
-			public const int textLabel = 2131034113;
+			public const int imagemItem = 2131034113;
+			
+			// aapt resource value: 0x7f050006
+			public const int listaDados = 2131034118;
+			
+			// aapt resource value: 0x7f050000
+			public const int spinner1 = 2131034112;
 			
 			// aapt resource value: 0x7f050002
-			public const int textViewInserirDebito = 2131034114;
+			public const int textLabel = 2131034114;
 			
 			// aapt resource value: 0x7f050003
-			public const int valorDebito = 2131034115;
+			public const int textViewInserirDebito = 2131034115;
+			
+			// aapt resource value: 0x7f050004
+			public const int valorDebito = 2131034116;
 			
 			static Id()
 			{
