@@ -13,7 +13,7 @@ using System.Linq;
 
 namespace AppFinanceiro
 {
-    [Activity(Label = "AppFinanceiro", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "AppFinanceiro", MainLauncher = true, Icon = "@drawable/logo")]
     public class MainActivity : Activity
     {
         List<String> Dados;
