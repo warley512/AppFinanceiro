@@ -7,3 +7,12 @@
       <item>Débito</item>
     </string-array>
 </resources>
+  <string name="planet_prompt">Selecione a Conta</string>
+  <string-array name="planets_array">
+    <item>Conta Salario</item>
+    <item>Conta Corrente</item>
+    <item>Poupança</item>
+    <item>Carteira</item>
+    
+  </string-array>
+</resources>

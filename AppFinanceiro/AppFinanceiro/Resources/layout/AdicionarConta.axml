@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:minWidth="25px"
-    android:minHeight="25px" />
+    android:padding="10dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="@string/planet_prompt"
+        android:textSize="30dip"
+        android:textColor="#FF9800"
+        android:textStyle="bold"
+        android:typeface="sans" />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="56.0dp"
+        android:prompt="@string/planet_prompt"
+        android:background="#2196F3"
+        android:drawingCacheQuality="auto" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="357.5dp"
+        android:id="@+id/space1" />
+    <Button
+        android:text="Criar"
+        android:layout_width="match_parent"
+        android:layout_height="72.5dp"
+        android:id="@+id/button1"
+        android:textSize="25dip"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:background="#2196F3"
+        android:textColor="#fff" />
+</LinearLayout>
