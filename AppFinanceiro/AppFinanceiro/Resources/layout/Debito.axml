@@ -21,7 +21,7 @@
         android:inputType="textMultiLine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText1"
+        android:id="@+id/DescricaoText"
         android:contextClickable="true"
         android:cursorVisible="true"
         android:contentDescription="@string/Hello"
@@ -62,7 +62,7 @@
         android:background="#2196F3" />
     <Space
         android:layout_width="380.0dp"
-        android:layout_height="54.0dp"
+        android:layout_height="64.0dp"
         android:id="@+id/space4" />
     <Button
         android:text="Enviar"
