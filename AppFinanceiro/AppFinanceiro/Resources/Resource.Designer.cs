@@ -64,10 +64,19 @@ namespace AppFinanceiro
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
+			public const int credito = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int logo = 2130837505;
+			public const int debito = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int Icon = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public const int logo = 2130837507;
+			
+			// aapt resource value: 0x7f020004
+			public const int transferencia = 2130837508;
 			
 			static Drawable()
 			{
@@ -103,8 +112,23 @@ namespace AppFinanceiro
 			// aapt resource value: 0x7f06000f
 			public const int listaDados = 2131099663;
 			
-			// aapt resource value: 0x7f060001
-			public const int space1 = 2131099649;
+			// aapt resource value: 0x7f050009
+			public const int editText1 = 2131034121;
+			
+			// aapt resource value: 0x7f050002
+			public const int iconOperacao = 2131034114;
+			
+			// aapt resource value: 0x7f050000
+			public const int imagemItem = 2131034112;
+			
+			// aapt resource value: 0x7f05000a
+			public const int listaDados = 2131034122;
+			
+			// aapt resource value: 0x7f05000f
+			public const int lista_lancamentos = 2131034127;
+			
+			// aapt resource value: 0x7f050003
+			public const int nomeOperacao = 2131034115;
 			
 			// aapt resource value: 0x7f06000e
 			public const int space2 = 2131099662;
@@ -124,9 +148,23 @@ namespace AppFinanceiro
 			// aapt resource value: 0x7f060007
 			public const int spinnerDebitoTipoLanc = 2131099655;
 			
-			// aapt resource value: 0x7f060004
-			public const int textLabel = 2131099652;
+			// aapt resource value: 0x7f050007
+			public const int textViewInserirDebito = 2131034119;
 			
+			// aapt resource value: 0x7f05000c
+			public const int totalCreditos = 2131034124;
+			
+			// aapt resource value: 0x7f05000d
+			public const int totalDebitos = 2131034125;
+			
+			// aapt resource value: 0x7f05000e
+			public const int totalFinal = 2131034126;
+			
+			// aapt resource value: 0x7f050008
+			public const int valorDebito = 2131034120;
+			
+			// aapt resource value: 0x7f050005
+			public const int valorOperacao = 2131034117;
 			// aapt resource value: 0x7f060005
 			public const int valorDebito = 2131099653;
 			
@@ -150,10 +188,16 @@ namespace AppFinanceiro
 			public const int Celula = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int Debito = 2130903042;
+			public const int CelulaLancamento = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int Main = 2130903043;
+			public const int Debito = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int Main = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int ResumoLancamentos = 2130903045;
 			
 			static Layout()
 			{

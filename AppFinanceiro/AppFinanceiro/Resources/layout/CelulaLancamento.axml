@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+    <ImageView
+        android:id="@+id/iconOperacao"
+        android:layout_height="70dp"
+        android:layout_width="40dp" />
+    <TextView
+        android:id="@+id/nomeOperacao"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingLeft="50dp"
+        android:layout_toLeftOf="@+id/dataOperacao"
+        android:layout_alignParentLeft="true"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/dataOperacao"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/valorOperacao"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/nomeOperacao"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true" />
+    <TextView
+        android:id="@+id/categoriaOperacao"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/valorOperacao"
+        android:textSize="14sp"
+        android:textColor="#999"
+        android:layout_alignParentLeft="true" />
+</RelativeLayout>

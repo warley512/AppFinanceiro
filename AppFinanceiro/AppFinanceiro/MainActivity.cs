@@ -61,7 +61,7 @@ namespace AppFinanceiro
 
         void List_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
-            StartActivity(typeof(Debito));//abre uma tela em cima da tela inicial.
+            StartActivity(typeof(ResumoLancamentos));//abre uma tela em cima da tela inicial.
            //Toast.MakeText(this, Dados[e.Position], ToastLength.Short).Show();
         }
     }
