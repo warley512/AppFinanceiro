@@ -4,16 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="25px"
+    android:contentDescription="@string/Hello"
     android:minHeight="25px"
-    android:contentDescription="@string/Hello">
-    <TextView
-        android:text="Inserir Débito"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textViewInserirDebito"
-        android:textColor="#FF0000"
-        android:textSize="50px" />
+    android:background="#fff">
     <EditText
         android:inputType="numberDecimal"
         android:layout_width="match_parent"
@@ -22,14 +15,39 @@
         android:contextClickable="true"
         android:cursorVisible="true"
         android:contentDescription="@string/Hello"
-        android:text="senha" />
+        android:text="Valor lançamento" />
     <EditText
         android:inputType="textMultiLine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editText1"
-        android:contentDescription="@string/Hello"
         android:contextClickable="true"
+        android:cursorVisible="true"
+        android:contentDescription="@string/Hello"
         android:digits="@string/Hello"
-        android:cursorVisible="true" />
+        android:text="Descrição" />
+    <Spinner
+        android:id="@+id/spinnerDebitoTipoLanc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown" />
+    <Spinner
+        android:id="@+id/spinnerCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown" />
+    <EditText
+        android:inputType="date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:text="Data" />
+    <EditText
+        android:inputType="time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:text="Hora" />
 </LinearLayout>

@@ -57,12 +57,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdicionarConta.cs" />
     <Compile Include="BD\BD_Lancamento.cs" />
     <Compile Include="BD\BD_Lancamento_Categoria.cs" />
     <Compile Include="BD\BD_Usuario.cs" />
     <Compile Include="BD\BD_Conta.cs" />
     <Compile Include="BD\BD_Atributo.cs" />
     <Compile Include="BD\BD_Categoria.cs" />
+    <Compile Include="DataHora.cs" />
     <Compile Include="Debito.cs" />
     <Compile Include="Lista_ResumoLancamentos.cs" />
     <Compile Include="GerenciaMenu.cs" />
