@@ -19,7 +19,7 @@ namespace AppFinanceiro.BD {
         public int id { get; set; }
 
         public string nome { get; set; }
-        public int tipo { get; set; }
+        public int tipo { get; set; } //0 para crédito, 1 para débito, 2 para transferencia
         public double valor { get; set; }
         public string comentario { get; set; }
         public string data { get; set;}

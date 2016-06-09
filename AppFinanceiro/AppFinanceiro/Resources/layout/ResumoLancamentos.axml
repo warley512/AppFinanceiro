@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/resumoGastos">
+        <TextView
+            android:id="@+id/totalCreditos"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_toLeftOf="@+id/totalDebitos"
+            android:textSize="16sp"
+            android:text="Crétidos" />
+        <TextView
+            android:id="@+id/totalDebitos"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_toLeftOf="@+id/totalFinal"
+            android:textSize="16sp"
+            android:text="Debitos" />
+        <TextView
+            android:id="@+id/totalFinal"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_toLeftOf="@+id/dataOperacao"
+            android:textSize="16sp"
+            android:text="Total" />
+    </LinearLayout>
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lista_lancamentos"
+        android:layout_marginTop="0.0dp" />
+</LinearLayout>
