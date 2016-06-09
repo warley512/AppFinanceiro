@@ -50,7 +50,7 @@ namespace AppFinanceiro
             Spinner spinner = FindViewById<Spinner>(Resource.Id.spinner1);
 
             //Categoria
-            Spinner spinnerCategoria = FindViewById<Spinner>(Resource.Id.spinner2);
+            Spinner spinnerCategoria = FindViewById<Spinner>(Resource.Id.spinnerCategoria);
 
             //Crédito ou débito
             spinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
