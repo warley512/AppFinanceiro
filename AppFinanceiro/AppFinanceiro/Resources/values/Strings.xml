@@ -6,7 +6,6 @@
       <item>Crédito</item>
       <item>Débito</item>
     </string-array>
-</resources>
   <string name="planet_prompt">Selecione a Conta</string>
   <string-array name="planets_array">
     <item>Conta Salario</item>
