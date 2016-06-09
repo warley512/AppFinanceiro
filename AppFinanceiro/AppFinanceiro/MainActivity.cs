@@ -16,7 +16,7 @@ namespace AppFinanceiro
     [Activity(Label = "AppFinanceiro", MainLauncher = true, Icon = "@drawable/logo")]
     public class MainActivity : Activity
     {
-        List<String> Dados;
+        List<string> Dados;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -40,10 +40,10 @@ namespace AppFinanceiro
             db.CreateTable<BD_Lancamento_Categoria>();
             db.CreateTable<BD_Usuario>();
 
-            db.Insert(new BD_Usuario() { nome = "Cliente1", email = "jo@as.com", senha = "123abc" });
+            //db.Insert(new BD_Usuario() { nome = "Cliente1", email = "jo@as.com", senha = "123abc" });
 
-            Dados = new List<String>();
 
+            Dados = new List<string>();
             Dados.Add("Cadastro de Contas");
             Dados.Add("Lançamento");
             Dados.Add("Resumo Financeiro");
@@ -52,18 +52,25 @@ namespace AppFinanceiro
             ListView list = FindViewById<ListView>(Resource.Id.listaDados);
             GerenciaMenu gl = new GerenciaMenu(Dados, this);
 
-            List<BD_Usuario> CLIS = db.Table<BD_Usuario>().ToList(); //Cria uma Lista com o que está na tabela Cliente transformado em lista.
+            //List<BD_Usuario> CLIS = db.Table<BD_Usuario>().ToList(); //Cria uma Lista com o que está na tabela Cliente transformado em lista.
 
-            db.Close();
+            //db.Close();
             list.Adapter = gl;
             list.ItemClick += List_ItemClick;
         }
 
-        void List_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
-        {
-            StartActivity(typeof(ResumoLancamentos));//abre uma tela em cima da tela inicial.
+        void List_ItemClick(object sender, AdapterView.ItemClickEventArgs e) {
+            if (e.Position == 0)
+                StartActivity(typeof(AdicionarConta));//abre uma tela em cima da tela inicial.
+            else if(e.Position == 1)
+                StartActivity(typeof(Debito));//abre uma tela em cima da tela inicial.
+            else if(e.Position == 2)
+                StartActivity(typeof(ResumoLancamentos));//abre uma tela em cima da tela inicial.
            //Toast.MakeText(this, Dados[e.Position], ToastLength.Short).Show();
         }
     }
+    public class itens_do_menu {
+        string texto { get; set; }
+        Type type { get; set; }
+    }
 }
-
