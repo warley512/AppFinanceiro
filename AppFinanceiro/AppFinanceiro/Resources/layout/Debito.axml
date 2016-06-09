@@ -4,8 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="25px"
+    android:contentDescription="@string/Hello"
     android:minHeight="25px"
-    android:contentDescription="@string/Hello">
+    android:background="#fff">
     <EditText
         android:inputType="numberDecimal"
         android:layout_width="match_parent"
@@ -39,25 +40,18 @@
         android:layout_height="56.0dp"
         android:background="#2196F3"
         android:spinnerMode="dropdown" />
-    <Button
-        android:text="Selecionar Data"
+    <EditText
+        android:inputType="date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editText2"
+        android:text="Data"
         android:textColor="#000" />
     <EditText
         android:inputType="time"
         android:layout_width="match_parent"
-        android:id="@+id/date_select_button" />
-    <TextView
-        android:id="@+id/timeDisplay"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="" />
-    <Button
-        android:id="@+id/pickTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
         android:text="Hora"
         android:textColor="#000" />
     <Space
@@ -68,7 +62,7 @@
         android:background="#2196F3" />
     <Space
         android:layout_width="380.0dp"
-        android:layout_height="64.0dp"
+        android:layout_height="49.5dp"
         android:id="@+id/space4" />
     <Button
         android:text="Enviar"
@@ -87,5 +81,4 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/space2" />
-        android:text="Modificar Hora" />
 </LinearLayout>
