@@ -29,29 +29,48 @@ namespace AppFinanceiro
 
             FindViewById<EditText>(Resource.Id.valorDebito).Click += valorDebitoFocus;
 
+            //Conexão com o banco
             var db = new SQLiteConnection(Path.Combine(
                System.Environment.GetFolderPath(
                    System.Environment.SpecialFolder.MyDocuments), "DB_Financeiro"
                )
            );
 
-            //List<BD_Usuario> DadosUser = db.Table<BD_Usuario>().ToList();
-            //List<String> listCategorias = new List<string>();
+            //Cria lista de categorias
+            List<BD_Usuario> DadosUser = db.Table<BD_Usuario>().ToList();
+            List<String> listCategorias = new List<string>();
 
-            //for (int i = 0; i < DadosUser.Count; i++)
-            //{
-            //    listCategorias.Add(DadosUser[i].nome);
-            //}
+            //passa lista de categorias para string
+            for (int i = 0; i < DadosUser.Count; i++)
+            {
+                listCategorias.Add(DadosUser[i].nome);
+            }
 
+            //Crédito ou débito
             Spinner spinner = FindViewById<Spinner>(Resource.Id.spinner1);
 
-           spinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
+            //Categoria
+            Spinner spinnerCategoria = FindViewById<Spinner>(Resource.Id.spinner2);
+
+            //Crédito ou débito
+            spinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
             var adapter = ArrayAdapter.CreateFromResource(
                      this, Resource.Array.account_types, Android.Resource.Layout.SimpleSpinnerItem);
-            //var adapter = new ArrayAdapter(this, Android.Resource.Layout.SimpleSpinnerItem, listCategorias);
+
+
+            //Adapter de categorias
+            var adapterCategorias = new ArrayAdapter(this, Android.Resource.Layout.SimpleSpinnerItem, listCategorias);
 
             adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
+
+            //Categoria
+            adapterCategorias.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
+            
+            //Débito ou crédito
             spinner.Adapter = adapter;
+
+            //Categoria
+            spinnerCategoria.Adapter = adapterCategorias;
 
 
         }

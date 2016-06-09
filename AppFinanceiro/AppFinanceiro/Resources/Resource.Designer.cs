@@ -88,6 +88,12 @@ namespace AppFinanceiro
 			// aapt resource value: 0x7f060006
 			public const int editText1 = 2131099654;
 			
+			// aapt resource value: 0x7f060009
+			public const int editText2 = 2131099657;
+			
+			// aapt resource value: 0x7f06000a
+			public const int editText3 = 2131099658;
+			
 			// aapt resource value: 0x7f060003
 			public const int imagemItem = 2131099651;
 			
@@ -97,11 +103,23 @@ namespace AppFinanceiro
 			// aapt resource value: 0x7f060001
 			public const int space1 = 2131099649;
 			
+			// aapt resource value: 0x7f06000b
+			public const int listaDados = 2131099659;
+			
+			// aapt resource value: 0x7f060001
+			public const int space1 = 2131099649;
+			
 			// aapt resource value: 0x7f060000
 			public const int spinner = 2131099648;
 			
 			// aapt resource value: 0x7f060007
 			public const int spinner1 = 2131099655;
+			public const int spinner = 2131099648;
+			
+			// aapt resource value: 0x7f060007
+			public const int spinner1 = 2131099655;
+			// aapt resource value: 0x7f060008
+			public const int spinner2 = 2131099656;
 			
 			// aapt resource value: 0x7f060004
 			public const int textLabel = 2131099652;
