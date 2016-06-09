@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="Hello">Hello World, Click Me!</string>
+    <string name="ApplicationName">AppFinanceiro</string>
+    <string-array name="account_types">
+      <item>Crédito</item>
+      <item>Débito</item>
+    </string-array>
+</resources>
   <string name="planet_prompt">Selecione a Conta</string>
   <string-array name="planets_array">
     <item>Conta Salario</item>
