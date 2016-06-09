@@ -14,33 +14,42 @@
         android:contextClickable="true"
         android:cursorVisible="true"
         android:contentDescription="@string/Hello"
-        android:text="Valor lançamento" />
+        android:text="Valor lançamento"
+        android:textColor="#000" />
     <EditText
         android:inputType="textMultiLine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText1"
+        android:id="@+id/DescricaoText"
+        android:contextClickable="true"
+        android:cursorVisible="true"
         android:contentDescription="@string/Hello"
         android:contextClickable="true"
         android:digits="@string/Hello"
-        android:cursorVisible="true"
-        android:text="Descrição" />
+        android:text="Descrição"
+        android:textColor="#000" />
     <Spinner
         android:id="@+id/spinnerDebitoTipoLanc"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:drawable/btn_dropdown"
+        android:layout_height="56.0dp"
+        android:background="#2196F3"
         android:spinnerMode="dropdown" />
     <Spinner
         android:id="@+id/spinnerCategoria"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:drawable/btn_dropdown"
+        android:layout_height="56.0dp"
+        android:background="#2196F3"
         android:spinnerMode="dropdown" />
     <Button
         android:text="Selecionar Data"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:text="Data"
+        android:textColor="#000" />
+    <EditText
+        android:inputType="time"
+        android:layout_width="match_parent"
         android:id="@+id/date_select_button" />
     <TextView
         android:id="@+id/timeDisplay"
@@ -51,5 +60,35 @@
         android:id="@+id/pickTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:text="Hora"
+        android:textColor="#000" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/space1"
+        android:layout_marginBottom="164.5dp"
+        android:background="#2196F3" />
+    <Space
+        android:layout_width="380.0dp"
+        android:layout_height="64.0dp"
+        android:id="@+id/space4" />
+    <Button
+        android:text="Enviar"
+        android:layout_width="match_parent"
+        android:layout_height="72.5dp"
+        android:id="@+id/buttonDebito"
+        android:background="#2196F3"
+        android:textColor="#fff"
+        android:textSize="25dip"
+        android:textStyle="bold" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/space3" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/space2" />
         android:text="Modificar Hora" />
 </LinearLayout>
