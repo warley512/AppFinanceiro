@@ -47,10 +47,10 @@ namespace AppFinanceiro
             }
 
             //Crédito ou débito
-            Spinner spinner = FindViewById<Spinner>(Resource.Id.spinner1);
+            Spinner spinner = FindViewById<Spinner>(Resource.Id.spinnerDebitoTipoLanc);
 
             //Categoria
-            Spinner spinnerCategoria = FindViewById<Spinner>(Resource.Id.spinner2);
+            Spinner spinnerCategoria = FindViewById<Spinner>(Resource.Id.spinnerCategoria);
 
             //Crédito ou débito
             spinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
@@ -72,14 +72,28 @@ namespace AppFinanceiro
             //Categoria
             spinnerCategoria.Adapter = adapterCategorias;
 
+            //implementação hora e data
+            //_dateDisplay = FindViewById<TextView>(Resource.Id.date_display);
+            //_dateSelectButton = FindViewById<Button>(Resource.Id.date_select_button);
+            //_dateSelectButton.Click += DateSelect_OnClick;
 
+
+        }
+
+        void DateSelect_OnClick(object sender, EventArgs eventArgs)
+        {
+            DataHora frag = DataHora.NewInstance(delegate (DateTime time)
+            {
+                //_dateDisplay.Text = time.ToLongDateString();
+            });
+            frag.Show(FragmentManager, DataHora.TAG);
         }
 
         private void spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {
             Spinner spinner = (Spinner)sender;
 
-            string toast = string.Format("The planet is {0}", spinner.GetItemAtPosition(e.Position));
+            string toast = string.Format("você selecionou: {0}", spinner.GetItemAtPosition(e.Position));
             Toast.MakeText(this, toast, ToastLength.Long).Show();
         }
 

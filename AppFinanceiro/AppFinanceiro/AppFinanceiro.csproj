@@ -64,6 +64,7 @@
     <Compile Include="BD\BD_Conta.cs" />
     <Compile Include="BD\BD_Atributo.cs" />
     <Compile Include="BD\BD_Categoria.cs" />
+    <Compile Include="DataHora.cs" />
     <Compile Include="Debito.cs" />
     <Compile Include="GerenciaMenu.cs" />
     <Compile Include="InserirCredito.cs" />

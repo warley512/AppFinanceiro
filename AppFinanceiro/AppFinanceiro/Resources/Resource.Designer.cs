@@ -106,11 +106,11 @@ namespace AppFinanceiro
 			// aapt resource value: 0x7f060000
 			public const int spinner = 2131099648;
 			
-			// aapt resource value: 0x7f060007
-			public const int spinner1 = 2131099655;
-			
 			// aapt resource value: 0x7f060008
-			public const int spinner2 = 2131099656;
+			public const int spinnerCategoria = 2131099656;
+			
+			// aapt resource value: 0x7f060007
+			public const int spinnerDebitoTipoLanc = 2131099655;
 			
 			// aapt resource value: 0x7f060004
 			public const int textLabel = 2131099652;
