@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="25px"
-    android:minHeight="25px"
-    android:contentDescription="@string/Hello">
+    android:contentDescription="@string/Hello"
+    android:minHeight="25px">
     <EditText
         android:inputType="numberDecimal"
         android:layout_width="match_parent"
@@ -20,10 +20,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editText1"
-        android:contentDescription="@string/Hello"
         android:contextClickable="true"
-        android:digits="@string/Hello"
         android:cursorVisible="true"
+        android:contentDescription="@string/Hello"
+        android:digits="@string/Hello"
         android:text="Descrição" />
     <Spinner
         android:id="@+id/spinnerDebitoTipoLanc"
