@@ -17,7 +17,7 @@ namespace AppFinanceiro {
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.AdicionarConta);
 
-            Spinner spinner = FindViewById<Spinner>(Resource.Id.spinner1);
+            Spinner spinner = FindViewById<Spinner>(Resource.Id.spinnerAdd);
             var itens = new List<string>() { "Conta Salario", "Conta Corrente", "Poupança", "Carteira" };
 
             spinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
