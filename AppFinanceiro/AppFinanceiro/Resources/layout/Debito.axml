@@ -45,11 +45,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/date_select_button"
         android:textColor="#000" />
-    <EditText
-        android:inputType="time"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/edtText2" />
     <TextView
         android:id="@+id/timeDisplay"
         android:layout_width="wrap_content"
@@ -65,7 +60,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/space1"
-        android:layout_marginBottom="164.5dp"
+        android:layout_marginBottom="100.5dp"
         android:background="#2196F3" />
     <Button
         android:text="Enviar"

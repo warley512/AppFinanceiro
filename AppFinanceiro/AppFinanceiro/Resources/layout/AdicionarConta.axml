@@ -23,7 +23,7 @@
         android:drawingCacheQuality="auto" />
     <Space
         android:layout_width="match_parent"
-        android:layout_height="357.0dp"
+        android:layout_height="300.0dp"
         android:id="@+id/space1" />
     <Button
         android:text="Criar"

@@ -29,6 +29,7 @@ namespace AppFinanceiro
 
         private int hour;
         private int minute;
+        SQLiteConnection db;
 
         const int TIME_DIALOG_ID = 0;
 
@@ -41,11 +42,12 @@ namespace AppFinanceiro
             FindViewById<EditText>(Resource.Id.valorDebito).Click += valorDebitoFocus;
 
             //Conexão com o banco
-            var db = new SQLiteConnection(Path.Combine(
+            db = new SQLiteConnection(Path.Combine(
                System.Environment.GetFolderPath(
                    System.Environment.SpecialFolder.MyDocuments), "DB_Financeiro"
                )
            );
+           
 
             //Cria lista de categorias
             List<BD_Usuario> DadosUser = db.Table<BD_Usuario>().ToList();
@@ -103,7 +105,9 @@ namespace AppFinanceiro
             // Display the current date
             UpdateDisplay();
 
-
+            Button button = FindViewById<Button>(Resource.Id.buttonDebito);
+            button.Click += delegate { buttonLancamento_OnClick(); };
+           
 
         }
 
@@ -150,15 +154,22 @@ namespace AppFinanceiro
             FindViewById<EditText>(Resource.Id.valorDebito).Text = "";
         }
 
-        /*
-        public Debito(double valor, string descricao, string tipoConta)
+        public void buttonLancamento_OnClick()
         {
-            this.valor = valor;
-            this.descricao = descricao;
-            this.tipoConta = tipoConta;
-
+            db.Insert(new BD_Lancamento
+            {
+                //FindViewById<EditText>(Resource.Id.DescricaoText).Text.ToString()
+                //double.Parse(FindViewById<EditText>(Resource.Id.valorDebito).Text.ToString())
+                nome = FindViewById<EditText>(Resource.Id.DescricaoText).Text,
+                tipo = 1,
+                valor = double.Parse(FindViewById<EditText>(Resource.Id.valorDebito).Text),
+                data = "12/8/2000",
+                hora = 1
+            });
+            StartActivity(typeof(ResumoLancamentos));
         }
-        */
+
+       
 
 
 
