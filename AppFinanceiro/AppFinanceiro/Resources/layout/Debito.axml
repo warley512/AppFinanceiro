@@ -74,6 +74,12 @@
     <Space
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/space1"
+        android:layout_marginBottom="164.5dp"
+        android:background="#2196F3" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/space3" />
     <Space
         android:layout_width="match_parent"

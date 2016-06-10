@@ -15,7 +15,7 @@ using AppFinanceiro.BD;
 
 namespace AppFinanceiro {
 
-    [Activity(Label = "Resumo de lançamentos")]
+    [Activity(Label = "Resumo de lançamentos", Icon = "@drawable/logo")]
     class ResumoLancamentos : Activity {
 
         List<string> Dados;

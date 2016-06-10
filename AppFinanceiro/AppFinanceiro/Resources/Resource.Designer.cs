@@ -97,6 +97,8 @@ namespace AppFinanceiro
 			// aapt resource value: 0x7f060002
 			public const int button1 = 2131099650;
 			
+			// aapt resource value: 0x7f060013
+			public const int buttonDebito = 2131099667;
 			// aapt resource value: 0x7f060011
 			public const int buttonDebito = 2131099665;
 			
