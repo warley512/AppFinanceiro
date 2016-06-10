@@ -2,5 +2,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="AppFinanceiro.AppFinanceiro" android:versionCode="1" android:versionName="1.0">
 	<uses-sdk android:minSdkVersion="16" />
 	<application android:label="AppFinanceiro"
-               android:theme="@android:style/Theme.Material.Light"></application>
+               android:theme="@android:style/Theme.Holo.Light"></application>
 </manifest>
