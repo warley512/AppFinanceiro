@@ -15,7 +15,7 @@ using AppFinanceiro.BD;
 
 namespace AppFinanceiro
 {
-    [Activity(Label = "Lançamento")]
+    [Activity(Label = "Lançamento", Icon = "@drawable/logo")]
     public class Debito : Activity
     {
         public double valor { get; set; }
@@ -141,8 +141,8 @@ namespace AppFinanceiro
         {
             Spinner spinner = (Spinner)sender;
 
-            string toast = string.Format("você selecionou: {0}", spinner.GetItemAtPosition(e.Position));
-            Toast.MakeText(this, toast, ToastLength.Long).Show();
+   //         string toast = string.Format("você selecionou: {0}", spinner.GetItemAtPosition(e.Position));
+   //         Toast.MakeText(this, toast, ToastLength.Long).Show();
         }
 
         public void valorDebitoFocus(object sender, EventArgs e)

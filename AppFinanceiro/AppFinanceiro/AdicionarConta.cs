@@ -11,7 +11,7 @@ using Android.Views;
 using Android.Widget;
 
 namespace AppFinanceiro {
-    [Activity(Label = "Adicionar Conta")]
+    [Activity(Label = "Adicionar Conta", Icon = "@drawable/logo")]
     class AdicionarConta : Activity {
         protected override void OnCreate(Bundle bundle) {
             base.OnCreate(bundle);
@@ -29,8 +29,8 @@ namespace AppFinanceiro {
             private void spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e) {
             Spinner spinner = (Spinner)sender;
 
-            string toast = string.Format("A conta é: {0}", spinner.GetItemAtPosition(e.Position));
-            Toast.MakeText(this, toast, ToastLength.Long).Show();
+ //           string toast = string.Format("{0}", spinner.GetItemAtPosition(e.Position));
+ //           Toast.MakeText(this, toast, ToastLength.Long).Show();
             }
 
         }

@@ -63,10 +63,8 @@
         android:textColor="#000" />
     <Space
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/space1"
-        android:layout_marginBottom="164.5dp"
-        android:background="#2196F3" />
+        android:layout_height="75.5dp"
+        android:id="@+id/space4" />
     <Button
         android:text="Enviar"
         android:layout_width="match_parent"
@@ -76,6 +74,12 @@
         android:textColor="#fff"
         android:textSize="25dip"
         android:textStyle="bold" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/space1"
+        android:layout_marginBottom="164.5dp"
+        android:background="#2196F3" />
     <Space
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
